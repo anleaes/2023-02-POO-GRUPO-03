@@ -1,3 +1,6 @@
+from categoria import Categoria
+
+
 class Produto:
     def __init__(self, nome, descricao, data_fabricacao, ativo, categoria):
         self.nome = nome
