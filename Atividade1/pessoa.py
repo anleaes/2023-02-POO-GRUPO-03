@@ -8,4 +8,4 @@ class Pessoa:
         print(f"{self.nome} se inscreveu no curso de {curso.titulo}")
 
     def __str__(self):
-        return f"{self.nome} ({self.email})"
+        return f"{self.nome} ({self.email} {self.endereco})"
