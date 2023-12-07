@@ -1,7 +1,7 @@
-from .models import Servico
+from .models import formapagamento
 from rest_framework import serializers
 
-class FormapagamentoSerializer(serializers.ModelSerializer):
+class formapagamentoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Formapagamento
+        model = formapagamento
         fields = '_all_'
