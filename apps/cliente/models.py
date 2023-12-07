@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class cliente(models.models):
+    nome = models.CharField(max_length=300)
+    idade = models.IntegerField()
+    cpf = models.CharField(max_length=50)
