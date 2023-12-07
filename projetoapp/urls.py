@@ -19,6 +19,15 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('servicos/', include('servico.urls', namespace='servico')),
+    path('tipos/', include('tipo.urls', namespace='tipo')),
+    path('avaliacoes/', include('avaliacao.urls', namespace='avaliacao')),
+    path('categorias/', include('categoria.urls', namespace='categoria')),
+    path('clientes/', include('cliente.urls', namespace='cliente')),
+    path('formapagamentos/', include('formapagamento.urls', namespace='formapagamento')),
+    path('profissionais/', include ('profissional.urls', namespace='profissional')),
+    path('localizacoes/', include ('localizacao.urls', namespace='localizacao')),
+
 
 
 ]
