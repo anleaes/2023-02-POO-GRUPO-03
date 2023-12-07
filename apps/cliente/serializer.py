@@ -1,7 +1,7 @@
-from .models import Servico
+from .models import cliente
 from rest_framework import serializers
 
-class ClienteSerializer(serializers.ModelSerializer):
+class clienteSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Cliente
+        model = cliente
         fields = '_all_'
