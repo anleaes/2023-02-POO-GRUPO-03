@@ -7,5 +7,10 @@ class Localizacao(models.Model):
     longitude = models.FloatField()
     endereco = models.CharField(max_length=255)
 
+    class Meta:
+        verbose_name = 'Local'
+        verbose_name_plural = 'Locais'
+        ordering =['id']
+
     def __str__(self):
         return self.endereco
