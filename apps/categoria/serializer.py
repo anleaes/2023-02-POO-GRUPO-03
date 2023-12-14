@@ -4,5 +4,5 @@ from rest_framework import serializers
 class CategoriaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Categoria
-        fields = '_all_'
+        fields = '__all__'
         

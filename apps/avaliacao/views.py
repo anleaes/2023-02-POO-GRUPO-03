@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import Avaliacao
-from .serializers import AvaliacaoSerializer
+from .serializer import AvaliacaoSerializer
 
 class AvaliacaoViewSet(viewsets.ModelViewSet):
     queryset = Avaliacao.objects.all()
