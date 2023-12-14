@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
-from .models import formapagamento
+from .models import Formapagamento
 from rest_framework import viewsets
-from .serializer import formapagamentoSerializer
+from .serializer import FormapagamentoSerializer
 
-class formapagamentoViewSet(viewsets.ModelViewSet):
-    queryset = formapagamento.objects.all()
-    serializer_class = formapagamentoSerializer
+class FormapagamentoViewSet(viewsets.ModelViewSet):    
+    queryset = Formapagamento.objects.all()
+    serializer_class = FormapagamentoSerializer
